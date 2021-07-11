@@ -9,6 +9,7 @@ import Login from "../../components/Login";
 import { useRef } from "react";
 import Tooltips from "@material-tailwind/react/Tooltips";
 import TooltipsContent from "@material-tailwind/react/TooltipsContent";
+import H6 from "@material-tailwind/react/Heading6";
 
 function Doc() {
   const [session] = useSession();
@@ -31,7 +32,7 @@ function Doc() {
   }
   console.log(snapshot);
   return (
-    <div>
+    <div className="sidescroll">
       <header className="flex justify-between items-center p-3 pb-1">
         <span className="cursor-pointer" onClick={() => router.push("/")}>
           <Icon name="description" size="5xl" color="blue" />
@@ -39,7 +40,7 @@ function Doc() {
 
         <div className="flex-grow px-2">
           <div className="flex items-center space-x-3">
-            <h2>{snapshot?.data()?.filename.toUpperCase()}</h2>
+            <H6 color="blueGray">{snapshot?.data()?.filename.toUpperCase()}</H6>
             <span className="cursor-pointer" ref={buttonRef}>
               <Icon name="star_outline" size="md" color="gray" />
             </span>

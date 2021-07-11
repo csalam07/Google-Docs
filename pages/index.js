@@ -10,7 +10,7 @@ export default function Home() {
   if (!session) return <Login />;
 
   return (
-    <div className="">
+    <div className="sidescroll">
       <Head>
         <title>Google Docs</title>
         <link rel="icon" href="/favicon.ico" />
