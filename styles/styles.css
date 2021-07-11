@@ -1,0 +1,10 @@
+@tailwind components;
+
+@layer components {
+  .option {
+    @apply cursor-pointer hover:bg-gray-100 p-2 transition duration-200 ease-out rounded-lg;
+  }
+  .template {
+    @apply transition duration-1000 ease-out;
+  }
+}
