@@ -1,6 +1,6 @@
-#Live [DEMO](https://google-docs-ten.vercel.app/)
+# Live [DEMO](https://google-docs-ten.vercel.app/)
 
-#VIdeo Preview
+# VIdeo Preview
 
 https://user-images.githubusercontent.com/66422819/125205974-73c90580-e2a4-11eb-9e13-08a120facbbb.mp4
 
