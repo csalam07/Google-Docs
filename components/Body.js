@@ -11,11 +11,9 @@ import InputIcon from "@material-tailwind/react/InputIcon";
 import db from "../lib/firebase";
 import firebase from "firebase";
 import SavedWork from "./SavedWork";
-import { useRouter } from "next/dist/client/router";
 
 function Body() {
   const [session] = useSession();
-  const router = useRouter();
   const [showModal, setShowModal] = useState(false);
   const [input, setInput] = useState("");
   const [showTemplate, setShowTemplate] = useState(false);
@@ -29,8 +27,6 @@ function Body() {
     });
     setInput("");
     setShowModal(false);
-    // router.push(`/docs/id`);
-    // router.push(`/doc/${id}`);
   };
 
   const modal = (
@@ -128,18 +124,22 @@ function Body() {
             </div>
 
             <div className={`${showTemplate ? "inline-flex" : "hidden"}`}>
-              <Card title="letter" subTitle="Spearmint" image="/letter.png" />
+              <Card title="Resume" subTitle="Swiss" image="/resume.png" />
             </div>
 
             <div className={`${showTemplate ? "inline-flex" : "hidden"}`}>
-              <Card title="letter" subTitle="Spearmint" image="/letter.png" />
+              <Card title="Recipe" subTitle="Coral" image="/recipe.png" />
             </div>
             <div className={`${showTemplate ? "inline-flex" : "hidden "}`}>
-              <Card title="letter" subTitle="Spearmint" image="/letter.png" />
+              <Card title="Report" subTitle="Tropic" image="/report.png" />
             </div>
 
             <div className={`${showTemplate ? "inline-flex" : "hidden"}`}>
-              <Card title="letter" subTitle="Spearmint" image="/letter.png" />
+              <Card
+                title="Pet resume"
+                subTitle="Spearmint"
+                image="/letter.png"
+              />
             </div>
           </div>
         </div>
